@@ -14,9 +14,11 @@ const Contactcard = () => {
             <h2>Email</h2>
             <p>Monday to Friday Expected </p>
             <p className={styles.last_para}>response time: 72 hours </p>
-            <Link href="mailto:mdwaseem0603@gmail.com">
-              Send Email <span>-&gt;</span>
-            </Link>
+            <button>
+              <Link href="mailto:mdwaseem0603@gmail.com">
+                Send Email <span>-&gt;</span>
+              </Link>
+            </button>
           </div>
 
           <div className={styles.grid_card}>
@@ -26,9 +28,11 @@ const Contactcard = () => {
             <h2>Live Chat</h2>
             <p>Weekdays: 9 AM — 6 PM ET</p>
             <p className={styles.last_para}>Weekends: 9 AM — 5 PM ET </p>
-            <Link href="/">
-              Chat Now <span>-&gt;</span>
-            </Link>
+            <button>
+              <Link href="tel:+918109608048">
+                Call Now <span>-&gt;</span>
+              </Link>
+            </button>
           </div>
 
           <div className={styles.grid_card}>
@@ -38,9 +42,13 @@ const Contactcard = () => {
             <h2>Community Forum</h2>
             <p>Monday to Friday Expected </p>
             <p className={styles.last_para}>response time: 72 hours </p>
-            <Link href="/" className={styles.anchorLink}>
-              Ask The Community <span>-&gt;</span>
-            </Link>
+            <button>
+              <Link
+                href="https://chat.whatsapp.com/KvzIxSWreDREzcfStCy8pB"
+                className={styles.anchorLink}>
+                Ask The Community <span>-&gt;</span>
+              </Link>
+            </button>
           </div>
         </div>
       </div>

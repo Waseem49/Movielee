@@ -33,7 +33,7 @@
 
 .navbarList a {
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: #161617;
   padding: 1.3rem 1rem;
   margin: 0;
@@ -45,17 +45,6 @@
 .navbarList .navbarItem a:hover {
   color: #e50914;
 }
-
-/* .navbarItem a:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  height: 0.5rem;
-  background-color: #e50914;
-  left: -100%;
-} */
 
 .navbarItem a:hover:before {
   animation: coolNavLine 0.4s linear forwards;

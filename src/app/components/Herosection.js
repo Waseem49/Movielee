@@ -20,7 +20,7 @@ const Herosection = ({ title }) => {
             </Link>
           </div>
           <div className={heroStyles.hero_image}>
-            {/* <Image /> */}
+            <Image src={"/home.svg"} alt="home" width={500} height={400} />
           </div>
         </div>
       </div>

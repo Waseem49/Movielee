@@ -1,40 +1,69 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { CgCloseR, CgMenu } from "react-icons/cg";
+import { useState } from "react";
 import styles from "@/app/styles/navbar.module.css";
 
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <header className={styles.main_header}>
       <div className={styles.navbar_brand}>
         <Link href="/">
-          <Image src="/next.svg" alt="logo" width={150} height={40} />
+          <Image src="/logo.svg" alt="logo" width={300} height={200} />
         </Link>
       </div>
       <nav className={styles.navbar}>
-        <div>
+        <div className={openMenu ? `${styles.active}` : ""}>
           <ul className={styles.navbarList}>
             <li className={styles.navbarItem}>
-              <Link className={styles.navbarLink} href={"/"}>
+              <Link
+                className={styles.navbarLink}
+                href="/"
+                onClick={() => setOpenMenu(false)}>
                 Home
               </Link>
             </li>
             <li className={styles.navbarItem}>
-              <Link className={styles.navbarLink} href={"/about"}>
+              <Link
+                className={styles.navbarLink}
+                href="/about"
+                onClick={() => setOpenMenu(false)}>
                 About
               </Link>
             </li>
             <li className={styles.navbarItem}>
-              <Link className={styles.navbarLink} href={"/movie"}>
+              <Link
+                className={styles.navbarLink}
+                onClick={() => setOpenMenu(false)}
+                href="/movie">
                 Movie
               </Link>
             </li>
             <li className={styles.navbarItem}>
-              <Link className={styles.navbarLink} href={"/contact"}>
+              <Link
+                className={styles.navbarLink}
+                onClick={() => setOpenMenu(false)}
+                href="/contact">
                 Contact
               </Link>
             </li>
           </ul>
+
+          {/* //nav icon */}
+          <div className={styles["mobile-navbar-btn"]}>
+            <CgMenu
+              name="menu-outline"
+              className={styles["mobile-nav-icon"]}
+              onClick={() => setOpenMenu(true)}
+            />
+            <CgCloseR
+              name="close-outline"
+              className={`${styles["mobile-nav-icon"]} ${styles["close-outline"]}`}
+              onClick={() => setOpenMenu(false)}
+            />
+          </div>
         </div>
       </nav>
     </header>

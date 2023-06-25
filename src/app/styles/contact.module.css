@@ -26,7 +26,10 @@
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   background-color: #fff;
 }
-
+.grid_card a {
+  text-decoration: none;
+  color: #fff;
+}
 .grid_card span {
   display: inline-block;
   transition: transform 200ms;
@@ -52,6 +55,20 @@
 .grid_card i {
   font-size: 4.2rem;
   color: #e50914;
+}
+
+.grid_card button {
+  background-color: #161617;
+  border-radius: 2.4rem;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: .8rem;
+  font-weight: 400;
+  height: 2.2rem;
+  padding: 0.3rem 1rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
 }
 
 /*for the main contact two section*/
@@ -97,7 +114,19 @@
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
-
+.contact_form button {
+  background-color: #161617;
+  border-radius: 2.4rem;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 400;
+  height: 2.5rem;
+  padding: 0.3rem 1rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+}
 .success_msg {
   color: #a8e48a;
 }
