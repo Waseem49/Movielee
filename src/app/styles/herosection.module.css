@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lexend+Deca:wght@100;200;300;400;500;600;700&family=Montserrat:wght@400;700&family=Poppins:wght@300;400;600&display=swap");
 
 .main_section {
+  margin-top: 5px;
   position: relative;
   background: linear-gradient(-45deg, #a8e48a, #1eb6d9, #f2d3f7);
   background-size: 200% 200%;
   /*animation: gradient-bg 20s ease infinite;*/
-  height: 65vh;
+  height: 35rem;
 }
 
 /*@keyframes gradient-bg {*/
