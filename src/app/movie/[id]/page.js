@@ -48,7 +48,7 @@ const details = async ({ params }) => {
           </h3>
           <h3>
             <span className={styles.sppp}>Directors </span>-{" "}
-            {data.directors[0].name}
+            {data?.directors[0]?.name ? data.directors[0].name : "Movie Lee"}
           </h3>
         </div>
       </div>
