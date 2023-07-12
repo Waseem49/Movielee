@@ -98,7 +98,10 @@
   margin: 1rem 0 2.4rem 0;
   line-height: 1.6;
 }
-
+.sppp {
+  color: #e50914;
+  font-size: 22px;
+}
 /*not found page styling */
 .error_page {
   width: 100%;
