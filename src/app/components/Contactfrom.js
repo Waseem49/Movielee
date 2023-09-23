@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import styles from "@/app/styles/contact.module.css";
 const Contactfrom = () => {
@@ -10,7 +9,6 @@ const Contactfrom = () => {
     message: "",
   };
   const [user, setUser] = useState(initialdata);
-
   const [status, setStatus] = useState(null);
 
   const handlechnage = (e) => {
@@ -33,12 +31,7 @@ const Contactfrom = () => {
       });
       // Set the status based on the response from the API route
       if (response.status === 200) {
-        setUser({
-          username: "",
-          email: "",
-          phone: "",
-          message: "",
-        });
+        setUser(initialdata);
         setStatus("success");
       } else {
         setStatus("error");

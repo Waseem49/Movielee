@@ -2,13 +2,12 @@ import dbconnect from "@/utils/dbconnect";
 import contactModel from "@/models/contact";
 import { NextResponse } from "next/server";
 
-export async function POST(req, res) {
+export async function POST(req) {
   try {
-    const body = await req.json();
+    const reqbody = await req.json();
+    console.log(reqbody);
     await dbconnect();
-
-    await contactModel.create(body);
-
+    await contactModel.create(reqbody);
     return NextResponse.json(
       {
         message: "Message sent successfully!",
@@ -19,7 +18,7 @@ export async function POST(req, res) {
     );
   } catch (e) {
     return NextResponse.json(
-      { message: "Server error, please try again!" },
+      { message: "Server error, please try again!", e },
       { status: 500 }
     );
   }

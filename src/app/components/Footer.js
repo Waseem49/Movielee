@@ -4,7 +4,6 @@ import {
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
-  FaYoutube,
 } from "react-icons/fa";
 import Link from "next/link";
 
@@ -19,7 +18,6 @@ const Footer = () => {
         <div className={footerStyles.content}>
           <div className={footerStyles.top}>
             <div className={footerStyles["logo-details"]}>
-              {/*<i className={footerStyles.fab fa-slack]></i>*/}
               <span className={footerStyles.logo_name}>Movie Lee</span>
             </div>
             <div className={footerStyles[`media-icons`]}>
@@ -43,16 +41,10 @@ const Footer = () => {
                   <FaInstagram />{" "}
                 </i>
               </Link>
-              <Link href="#">
+              <Link href="https://www.linkedin.com/in/waseem49/" target="blink">
                 <i>
                   {" "}
                   <FaLinkedinIn />{" "}
-                </i>
-              </Link>
-              <Link href="#">
-                <i>
-                  {" "}
-                  <FaYoutube />{" "}
                 </i>
               </Link>
             </div>
@@ -64,10 +56,14 @@ const Footer = () => {
                 <a href="#">Home</a>
               </li>
               <li>
-                <a href="#">Contact us</a>
+                <a href="https://www.linkedin.com/in/waseem49/" target="blink">
+                  Contact us
+                </a>
               </li>
               <li>
-                <a href="#">About us</a>
+                <a href="https://www.linkedin.com/in/waseem49/" target="blink">
+                  About us
+                </a>
               </li>
               <li>
                 <a href="#">Get started</a>
@@ -91,31 +87,20 @@ const Footer = () => {
             <ul className={footerStyles.box}>
               <li className={footerStyles.link_name}>Account</li>
               <li>
-                <a href="#">Profile</a>
+                <a href="https://www.linkedin.com/in/waseem49/" target="blink">
+                  Profile
+                </a>
               </li>
               <li>
-                <a href="#">My account</a>
+                <a href="https://www.linkedin.com/in/waseem49/" target="blink">
+                  My account
+                </a>
               </li>
               <li>
                 <a href="#">Prefrences</a>
               </li>
               <li>
                 <a href="#">Purchase</a>
-              </li>
-            </ul>
-            <ul className={footerStyles.box}>
-              <li className={footerStyles.link_name}>Courses</li>
-              <li>
-                <a href="#">HTML & CSS</a>
-              </li>
-              <li>
-                <a href="#">JavaScript</a>
-              </li>
-              <li>
-                <a href="#">Photography</a>
-              </li>
-              <li>
-                <a href="#">Photoshop</a>
               </li>
             </ul>
             <ul className={`${footerStyles.box} ${footerStyles["input-box"]}`}>
@@ -132,7 +117,6 @@ const Footer = () => {
         <div className={footerStyles["bottom-details"]}>
           <div className={footerStyles.bottom_text}>
             <span className={footerStyles.copyright_text}>
-              {" "}
               Copyright © 2023
               <Link href="/>">Movie Lee</Link> All rights reserved{" "}
             </span>
